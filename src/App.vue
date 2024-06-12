@@ -2,6 +2,7 @@
 
 <template>
 	<h1>dsd</h1>
+	<h1>dsd</h1>
 	 
 </template>
 
