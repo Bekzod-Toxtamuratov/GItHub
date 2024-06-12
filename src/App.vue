@@ -4,8 +4,6 @@ import Navbar from './components/Navbar.vue'
 
 <template>
 	<div>
-		<h2>App vue bu hisobladna</h2>
-		<h2>App vue bu hisobladna</h2>
 		<Navbar />
 
 		<!-- <Carousel /> -->
