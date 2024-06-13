@@ -11,9 +11,9 @@ import Products from '../components/Products.vue'
 	<div>
 		<Navbar />
 		<Intro class="mb-3" />
+		<Market />
 		<Banner />
 		<Products />
-		<Market />
 		<Dostavka />
 	</div>
 </template>
