@@ -50,15 +50,7 @@
 				<img src="/flag.png" />
 			</div>
 		</div>
-		<div class="grid grid-cols-3 py-[10px] gap-x-11">
-			<div class="col-span-2">
-				<img class="h-full w-[1350px]" src="/main.png" />
-			</div>
-			<div class="">
-				<img class="h-full w-[450px]" src="/girl.png" />
-			</div>
-			
-		</div>
+		
 	</header>
 </template>
 
