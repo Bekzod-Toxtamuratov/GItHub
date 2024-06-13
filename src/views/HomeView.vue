@@ -3,6 +3,7 @@ import Intro from '../components/Intro.vue'
 import Navbar from '../components/Navbar.vue'
 import Banner from '../components/Banner.vue'
 import Products from '../components/Products.vue'
+import Market from '../components/Market.vue'
 
 </script>
 
@@ -12,6 +13,7 @@ import Products from '../components/Products.vue'
 		<Intro />
 		<Banner />
         	<Products />
+		<Market />
 	</div>
 </template>
 
