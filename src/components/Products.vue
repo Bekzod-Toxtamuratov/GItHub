@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from "vue";
 import { useProducts } from "@/composable/useProducts.js";
-import Temp from "../components/Navbar.vue";
-import Loading from "../components/Loading.vue";
+import Temp from "./Navbar.vue";
+import Loading from "./Loading.vue";
 
 const limit = ref(8);
 const skip = ref(0);
