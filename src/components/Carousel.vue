@@ -29,6 +29,7 @@ const modules = ref([Pagination, Autoplay])
 		</swiper-slide>
 		<swiper-slide
 			><img class="h-full w-[1350px]" src="/main.png" />
+			
 		</swiper-slide>
 	</swiper>
 </template>

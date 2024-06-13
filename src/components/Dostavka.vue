@@ -9,6 +9,7 @@
       <img src="../../public/delivery_guy.png" alt="Delivery Guy" class="">
     </div>
     </div>
+    
   </div>
 </template>
 
