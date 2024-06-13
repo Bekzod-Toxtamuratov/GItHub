@@ -9,6 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@vueuse/core": "^10.11.0",
+    "axios": "^1.7.2",
+>>>>>>> 9937b315d17460002bbd8aaad64121cac70961f7
     "swiper": "^11.1.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
