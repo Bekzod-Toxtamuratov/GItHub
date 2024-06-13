@@ -5,6 +5,7 @@ import Intro from '../components/Intro.vue'
 import Market from '../components/Market.vue'
 import Navbar from '../components/Navbar.vue'
 import Products from '../components/Products.vue'
+import SkidkaTovar from '../components/skidkaTovar.vue'
 </script>
 
 <template>
