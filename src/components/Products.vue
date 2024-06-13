@@ -48,7 +48,7 @@ fetchProducts(); // Initial fetch
     <div class="flex items-center justify-center py-4">
       <button
         @click="loadMore"
-        class="mt-5 bg-slate-400 hover:bg-slate-400 text-white py-2 px-4 rounded transition-colors duration-300"
+        class="mt-5 bg-[#F7931E] hover:bg-slate-400 text-white py-2 px-4 rounded transition-colors duration-300"
         :disabled="loading"
       >
         Показать еще
