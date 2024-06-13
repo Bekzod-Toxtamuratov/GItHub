@@ -29,7 +29,7 @@ fetchProducts(); // Initial fetch
 
     <div class="grid lg:grid-cols-4 gap-5 grid-cols-2">
       <div
-        class="bg-white p-5 rounded shadow-md hover:shadow-lg transition-shadow duration-300"
+        class="bg-white p-5 rounded shadow-md hover:shadow-lg transition-shadow duration-400"
         v-for="product in products"
         :key="product.id"
       >
