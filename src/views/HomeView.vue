@@ -4,6 +4,7 @@ import Dostavka from '../components/Dostavka.vue'
 import Intro from '../components/Intro.vue'
 import Market from '../components/Market.vue'
 import Navbar from '../components/Navbar.vue'
+import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
 </script>
 
@@ -11,9 +12,10 @@ import Products from '../components/Products.vue'
 	<div>
 		<Navbar />
 		<Intro class="mb-3" />
-		<Market />
 		<Banner />
 		<Products />
+		<Market />
+		<PopularProducts />
 		<Dostavka />
 	</div>
 </template>
