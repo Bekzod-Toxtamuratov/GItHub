@@ -120,5 +120,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="flex justify-center mt-[66px]">
+
+			<button class="btn">Все магазины</button>
+		</div>
 	</div>
 </template>

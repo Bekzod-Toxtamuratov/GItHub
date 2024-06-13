@@ -2,7 +2,12 @@
 export default {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		extend: {
+			color:{
+				 primary:'#F7931E'
+			}
+
+		},
 		container: {
 			center: true,
 			padding: {
@@ -13,6 +18,8 @@ export default {
 				'2xl': '6rem',
 			},
 		},
+		
 	},
 	plugins: [],
 }
+

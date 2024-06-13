@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.btn {
+	@apply bg-[#F7931E] text-white font-[Roboto] py-2 px-4 rounded;
+}
