@@ -123,11 +123,12 @@
 		<div class="flex justify-center mt-[66px]">
 			<button class="btn">Все магазины</button>
 		</div>
-		<base-button>ghj</base-button>
+		<div class="flex justify-center">
+			<base-button>Все магазины</base-button>
+		</div>
 	</div>
 </template>
 
 <script setup>
-import BaseButton from "./BaseButton.vue"
-
+import BaseButton from './BaseButton.vue'
 </script>

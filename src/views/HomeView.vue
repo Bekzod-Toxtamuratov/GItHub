@@ -12,10 +12,10 @@ import Products from '../components/Products.vue'
 	<div>
 		<Navbar />
 		<Intro class="mb-3" />
-		<Banner />
-		<Products />
 		<Market />
 		<PopularProducts />
+		<Banner />
+		<Products />
 		<Dostavka />
 	</div>
 </template>
