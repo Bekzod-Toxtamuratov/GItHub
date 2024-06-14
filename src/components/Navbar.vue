@@ -27,7 +27,7 @@
 				<img src="/Logo.png" alt="Logo" />
 
 				<div class="flex gap-x-6 items-center">
-					<div class="flex   border border-[#F7931E] py-2 px-4">
+					<div class="flex border border-[#F7931E] py-2 px-4">
 						<img src="/image.svg" alt="image.svg" />
 						<select class="px-5 text-[#F7931E]" id="categories">
 							<option value="Категории">Категории</option>
@@ -44,8 +44,8 @@
 						<span class="bg-primary py-3 px-4 absolute right-0">
 							<img src="/search.png" alt="Search icon" class="" />
 						</span>
-						<span class="bg-[blue] py-3 px-4 absolute right-12">
-							<img src="/search.png" alt="Search icon" class="" />
+						<span class="py-3 px-4 absolute right-12">
+							<img src="/bek.svg" alt="Search icon" class="" />
 						</span>
 					</div>
 					<img src="/start.png" />
