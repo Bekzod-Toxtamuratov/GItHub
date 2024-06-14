@@ -50,7 +50,6 @@
 				<img src="/flag.png" />
 			</div>
 		</div>
-		
 	</header>
 </template>
 
