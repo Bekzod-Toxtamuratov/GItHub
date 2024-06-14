@@ -1,5 +1,5 @@
 <template>
-	<div class="container flex">
+	<div class="container flex pt-20">
 		<div class="grid grid-cols-3 py-[10px] gap-x-11">
 			<div class="col-span-2">
 				<Carousel />

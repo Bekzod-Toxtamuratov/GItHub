@@ -18,7 +18,7 @@ import SkidkaTovar from '../components/skidkaTovar.vue'
 		<Banner />
 		<Products />
 		<Dostavka />
-		<SkidkaTovar/>
+		<SkidkaTovar />
 	</div>
 </template>
 
