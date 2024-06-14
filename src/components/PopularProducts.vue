@@ -3,17 +3,18 @@ import { ref } from "vue";
 import { usePopularProducts } from "@/composable/usePopularProducts.js";
 import Temp from "./Navbar.vue";
 import Loading from "./Loading.vue";
+import { useProducts } from "../composable/useProducts";
 
 const limit = ref(8);
 const skip = ref(0);
-const { products, error, loading, fetchPopularProducts } = usePopularProducts(limit, skip);
+const { products, error, loading, fetchProducts2 } = useProducts(limit, skip);
 
 const loadMore = () => {
   skip.value += limit.value;
-  fetchPopularProducts();
+  fetchProducts2();
 };
 
-fetchPopularProducts(); // Initial fetch
+fetchProducts2(); // Initial fetch
 </script>
 
 <template>
@@ -28,7 +29,7 @@ fetchPopularProducts(); // Initial fetch
     </div>
     <!-- <h2 class="text-center py-5 text-3xl font-semibold">Products</h2> -->
 
-    <div class="grid grid-cols-4 gap-5">
+    <div class="grid lg:grid-cols-5 gap-5 gris-cols-2">
       <div
         class="bg-white p-5 rounded shadow-md hover:shadow-lg transition-shadow duration-300"
         v-for="product in products"
