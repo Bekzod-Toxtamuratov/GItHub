@@ -27,10 +27,10 @@
       </swiper>
       
      
-      <div class="">
+      <div class="my-5">
       <img class="w-full" src="/public/banners/banner2.png" alt="">
       <div class="md:grid grid-cols-2 gap-3 my-3">
-        
+
         <img class="w-full" src="/public/banners/banner3.png" alt="">
         <img class="w-full" src="/public/banners/banner4.png" alt="">
       </div>

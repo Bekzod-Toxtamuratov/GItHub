@@ -27,9 +27,9 @@ fetchProducts(); // Initial fetch
     </div>
     <!-- <h2 class="text-center py-5 text-3xl font-semibold">Products</h2> -->
 
-    <div class="grid grid-cols-4 gap-5">
+    <div class="grid lg:grid-cols-5 gap-5 grid-cols-2 ">
       <div
-        class="bg-white p-5 rounded shadow-md hover:shadow-lg transition-shadow duration-300"
+        class="bg-white p-5 rounded shadow-md hover:shadow-lg transition-shadow duration-400"
         v-for="product in products"
         :key="product.id"
       >
