@@ -6,6 +6,7 @@ import Rubashka from '../components/Rubashka.vue'
 <template>
 	<div>
 		<Navbar />
+		<Navbar />
 		<Rubashka />
 	</div>
 </template>
