@@ -27,7 +27,8 @@
 				<img src="/Logo.png" alt="Logo" />
 
 				<div class="flex gap-x-6 items-center">
-					<div class="border border-[#F7931E] py-2 px-6">
+					<div class="flex   border border-[#F7931E] py-2 px-4">
+						<img src="/image.svg" alt="image.svg" />
 						<select class="px-5 text-[#F7931E]" id="categories">
 							<option value="Категории">Категории</option>
 							<option value="saab">Saab</option>
@@ -40,11 +41,12 @@
 							class="placeholder-shown:border-gray-500 outline-0 py-2 pl-4 text-black w-[435px]"
 							placeholder="Поиск..."
 						/>
-						<img
-							src="/search.png"
-							alt="Search icon"
-							class="absolute top-[20px] right-3"
-						/>
+						<span class="bg-primary py-3 px-4 absolute right-0">
+							<img src="/search.png" alt="Search icon" class="" />
+						</span>
+						<span class="bg-[blue] py-3 px-4 absolute right-12">
+							<img src="/search.png" alt="Search icon" class="" />
+						</span>
 					</div>
 					<img src="/start.png" />
 					<img src="/bag.png" />
