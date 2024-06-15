@@ -6,10 +6,6 @@ import Market from '../components/Market.vue'
 import Navbar from '../components/Navbar.vue'
 import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
-<<<<<<< HEAD
-=======
-import SkidkaTovar from '../components/skidkaTovar.vue'
->>>>>>> main
 </script>
 
 <template>
@@ -20,11 +16,6 @@ import SkidkaTovar from '../components/skidkaTovar.vue'
 		<PopularProducts />
 		<Banner />
 		<Products />
-<<<<<<< HEAD
-=======
-		<Dostavka />
-		<SkidkaTovar />
->>>>>>> main
 	</div>
 </template>
 
