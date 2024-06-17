@@ -1,13 +1,13 @@
 <script setup>
 import Banner from '../components/Banner.vue'
 import Dostavka from '../components/Dostavka.vue'
+import Footer from '../components/Footer.vue'
 import Intro from '../components/Intro.vue'
 import Market from '../components/Market.vue'
 import Navbar from '../components/Navbar.vue'
 import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
-import skidkaTovar from "../components/skidkaTovar.vue"
-
+import skidkaTovar from '../components/skidkaTovar.vue'
 </script>
 
 <template>
@@ -18,8 +18,9 @@ import skidkaTovar from "../components/skidkaTovar.vue"
 		<PopularProducts />
 		<Banner />
 		<Products />
-		<Dostavka/>
-		<skidkaTovar/>
+		<Dostavka />
+		<skidkaTovar />
+		<Footer />
 	</div>
 </template>
 
