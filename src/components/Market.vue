@@ -51,7 +51,7 @@
 					<div class="flex items-center text-[#565656]">
 						<img
 							class="w-[16px], h-[16px]"
-							src="../assets/images/Star 4.png"
+							src="../assets/images/Star-4.png"
 							alt=""
 						/>
 						<p class="font-[Roboto]">4.5</p>
@@ -90,7 +90,7 @@
 					<div class="flex items-center text-[#565656]">
 						<img
 							class="w-[16px], h-[16px]"
-							src="../assets/images/Star 4.png"
+							src="../assets/images/Star-4.png"
 							alt=""
 						/>
 						<p class="font-[Roboto]">4.5</p>

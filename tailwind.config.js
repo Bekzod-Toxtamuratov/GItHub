@@ -3,10 +3,13 @@ export default {
 	content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
 	theme: {
 		extend: {
-			colors:{
-				 primary:'#F7931E'
-			}
-
+			colors: {
+				primary: '#F7931E',
+				kulrang: '#EDE9E9',
+			},
+			fontFamily: {
+				roboto: 'Roboto',
+			},
 		},
 		container: {
 			center: true,
@@ -18,8 +21,6 @@ export default {
 				'2xl': '6rem',
 			},
 		},
-		
 	},
 	plugins: [],
 }
-
