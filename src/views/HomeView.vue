@@ -6,6 +6,8 @@ import Market from '../components/Market.vue'
 import Navbar from '../components/Navbar.vue'
 import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
+
+
 import SkidkaTovar from '../components/skidkaTovar.vue'
 import Novosti from '../components/Novosti.vue'
 </script>
