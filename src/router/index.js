@@ -13,6 +13,11 @@ const router = createRouter({
 			name: 'tovar',
 			component: () => import('../views/TovarView.vue'),
 		},
+		{
+			path: '/magazin',
+			name: 'magazin',
+			component: () => import('../views/VseMagazinView.vue'),
+		},
 	],
 })
 
