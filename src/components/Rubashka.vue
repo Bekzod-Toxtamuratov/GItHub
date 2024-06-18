@@ -1,5 +1,5 @@
 <template>
-	<div class="container mt-10 border border-red-500">
+	<div class="container mt-10">
 		<p>Главная страница / Рубашки / Базовая рубашка</p>
 		<h2 class="text-primary text-[48px] font-medium">Базовая рубашка</h2>
 		<div class="obshiy mt-10 mb-[119px] flex gap-2">
@@ -139,6 +139,102 @@
 		<div class="px-[140px] mb-20">
 			<img src="/222.png" />
 			<img src="/23.png" />
+		</div>
+		<div class="flex">
+			<div class="w-[70%]">
+				<h2 class="text-xl font-medium mb-7">Отзывы покупателей (24)</h2>
+				<div class="flex gap-10 items-center mb-4">
+					<h3 class="font-medium text-xl">Турсунов Асрор</h3>
+					<div class="flex gap-3 items-center">
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+					</div>
+				</div>
+				<p class="text-[#666666] font-normal leading-5 text-[16px] mb-4">
+					Качество ткани хорошее, но если вы предпочитаете оверсайз, выбирайте
+					размер меньше вашего, например, слишком свободные рукава.
+				</p>
+				<div class="flex justify-between w-[35%]">
+					<p class="text-[14px] font-normal leading-4">30.04.2021</p>
+					<div class="flex gap-2">
+						<img src="/gal.png" />
+						<p>Я купил товар</p>
+					</div>
+				</div>
+				<div class="flex gap-10 items-center mb-4 mt-5">
+					<h3 class="font-medium text-xl">Ахмад Собиров</h3>
+					<div class="flex gap-3 items-center">
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+					</div>
+				</div>
+				<p class="text-[#666666] font-normal leading-5 text-[16px] mb-4">
+					Ткань по своей фактуре - это не ткань, которая создает очень мелкие
+					морщинки, занимает все ваше тело, качество проявляется в любом виде.
+				</p>
+				<div class="flex justify-between w-[35%]">
+					<p class="text-[14px] font-normal leading-4">30.04.2021</p>
+					<div class="flex gap-2">
+						<img src="/gal.png" />
+						<p>Я купил товар</p>
+					</div>
+				</div>
+				<div class="flex gap-10 items-center mb-4 mt-5">
+					<h3 class="font-medium text-xl">Улугбек Мустаков</h3>
+					<div class="flex gap-3 items-center">
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+						<img src="/start2.png" />
+					</div>
+				</div>
+				<p class="text-[#666666] font-normal leading-5 text-[16px] mb-4">
+					Полноразмерное качество красивое
+				</p>
+				<div class="flex justify-between w-[35%]">
+					<p class="text-[14px] font-normal leading-4">30.04.2021</p>
+					<div class="flex gap-2">
+						<img src="/gal.png" />
+						<p>Я купил товар</p>
+					</div>
+				</div>
+				<input
+					class="mt-10 py-3 px-[60px] border-2 mb-20 w-[40%]"
+					value="Показать больше комментариев"
+				/>
+			</div>
+			<div class="w-[30%] bg-[#FCE3A4] h-[409px]">
+				<div class="px-4">
+					<h2 class="font-bold text-[24px] leading-[31px] pt-5 mb-4">
+						Оставьте ваш отзыв
+					</h2>
+					<input
+						class="bg-[#FAF4F4] py-3 px-5 w-full mb-5 text-[#C4C4C4]"
+						value="Ваше имя"
+					/>
+					<input
+						class="bg-[#FAF4F4] py-3 px-5 w-full text-[#C4C4C4] mb-4"
+						value="Ваш  e-mail"
+					/>
+					<textarea
+						class="bg-[#FAF4F4] py-10 px-5 mb-4 w-full text-[#C4C4C4] h-[110px]"
+						placeholder="Ваш отзыв"
+					>
+					</textarea>
+					<div class="flex justify-center">
+						<button class="bg-[#FE9E0D] text-[white] py-3 px-10">
+							Отправить отзыв
+						</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
