@@ -27,14 +27,14 @@
 				<img src="/Logo.png" alt="Logo" />
 
 				<div class="flex gap-x-6 items-center">
-					<div class="flex border border-[#F7931E] py-2 px-4">
+					<div class="flex gap-3 border border-[#F7931E] py-2 px-4">
 						<img src="/image.svg" alt="image.svg" />
-						<select class="px-5 text-[#F7931E]" id="categories">
-							<option value="Категории">Категории</option>
-							<option value="saab">Saab</option>
-							<option value="opel">Opel</option>
-							<option value="audi">Audi</option>
-						</select>
+						<button
+							@click="toggleDropdown"
+							class="bg-primary text-white px-4 py-2 rounded"
+						>
+							Категории
+						</button>
 					</div>
 					<div class="relative border border-[#F7931E] flex items-center">
 						<input
@@ -56,11 +56,17 @@
 				</div>
 			</div>
 		</div>
+		<CategoryDropdown v-if="showDropdown" @close="toggleDropdown" />
 	</div>
 </template>
 
 <script setup>
-// No additional script needed
-</script>
+import { ref } from 'vue'
+import CategoryDropdown from './CategoryDropdown.vue'
 
-<style scoped lang="scss"></style>
+const showDropdown = ref(false)
+
+const toggleDropdown = () => {
+	showDropdown.value = !showDropdown.value
+}
+</script>
