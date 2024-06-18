@@ -29,6 +29,11 @@ const router = createRouter({
       name: "about",
       component: () => import("../views/Onas.View.vue"),
     },
+    {
+      path: "/novost",
+      name: "novost",
+      component: () => import("../views/Novosti.vue"),
+    },
   ],
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
