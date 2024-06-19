@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<div class="container bg-[#023047]">
+	<div class="w-full bg-[#023047]">
+		<div class="container">
 			<div
 				class="py-[50px] flex flex-col gap-5 items-start md:grid grid-cols-5"
 			>
