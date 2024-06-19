@@ -7,6 +7,9 @@ export default {
 				primary: '#F7931E',
 				kulrang: '#EDE9E9',
 			},
+			fontFamily: {
+				roboto: 'Roboto',
+			},
 		},
 		container: {
 			center: true,
