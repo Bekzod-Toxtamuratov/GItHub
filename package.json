@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
+    "api": "^6.1.1",
     "axios": "^1.7.2",
     "boxicons": "^2.1.4",
     "swiper": "^11.1.4",

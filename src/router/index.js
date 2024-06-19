@@ -17,6 +17,16 @@ const router = createRouter({
 			name: 'tovar',
 			component: () => import('../views/TovarView.vue'),
 		},
+		{
+			path: '/products',
+			name: 'products',
+			component: () => import('@/components/Products.vue'),
+		},
+		{
+			path: '/home/:id',
+			name: 'product-detail',
+			component: () => import('@/components/product-details.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {
