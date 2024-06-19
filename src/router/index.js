@@ -18,6 +18,21 @@ const router = createRouter({
 			component: () => import('../views/TovarView.vue'),
 		},
 	],
+	scrollBehavior(to, from, savedPosition) {
+		if (savedPosition) {
+			return savedPosition
+		} else {
+			return { top: 0 }
+		}
+	},
+})
+
+router.beforeEach((to, from) => {
+	const isLoggedin = JSON.parse(localStorage.getItem('user'))
+
+	if (!isLoggedin && to.name != 'login') {
+		return { name: 'login' }
+	}
 })
 
 export default router

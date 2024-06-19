@@ -11,6 +11,7 @@
   "dependencies": {
     "@vueuse/core": "^10.11.0",
     "axios": "^1.7.2",
+    "boxicons": "^2.1.4",
     "swiper": "^11.1.4",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
