@@ -1,6 +1,6 @@
 <template>
-	<header class="container">
-		<div class="flex justify-between py-3 bg-[#F7931F]">
+	<header class="container bg-[#F7931F]">
+		<div class="flex justify-between py-3">
 			<div class="flex items-center">
 				<img src="/location.png" alt="Location icon" class="mr-2" />
 				<p class="text-[#FFFFFF] max-w-[178px]">
@@ -20,38 +20,41 @@
 				</div>
 			</div>
 		</div>
-		<div class="py-3 flex justify-between items-center">
-			<img src="/Logo.png" alt="Logo" />
+	</header>
+	<div class="container sticky z-10 top-0 rigth-0 w-full bg-white shadow-lg">
+		<div class="w-full">
+			<div class="py-3 flex justify-between items-center z-10">
+				<img src="/Logo.png" alt="Logo" />
 
-			<div class="flex gap-x-6 items-center">
-				<div class="border border-[#F7931E] py-2 px-6">
-					<select class="px-5 text-[#F7931E]" id="categories">
-						<option value="Категории">Категории</option>
-						<option value="saab">Saab</option>
-						<option value="opel">Opel</option>
-						<option value="audi">Audi</option>
-					</select>
+				<div class="flex gap-x-6 items-center">
+					<div class="border border-[#F7931E] py-2 px-6">
+						<select class="px-5 text-[#F7931E]" id="categories">
+							<option value="Категории">Категории</option>
+							<option value="saab">Saab</option>
+							<option value="opel">Opel</option>
+							<option value="audi">Audi</option>
+						</select>
+					</div>
+					<div class="relative border border-[#F7931E] flex items-center">
+						<input
+							class="placeholder-shown:border-gray-500 outline-0 py-2 pl-4 text-black w-[435px]"
+							placeholder="Поиск..."
+						/>
+						<img
+							src="/search.png"
+							alt="Search icon"
+							class="absolute top-[20px] right-3"
+						/>
+					</div>
+					<img src="/start.png" />
+					<img src="/bag.png" />
+					<img src="/11.png" />
+					<img src="/person.png" />
+					<img src="/flag.png" />
 				</div>
-				<div class="relative border border-[#F7931E] flex items-center">
-					<input
-						class="placeholder-shown:border-gray-500 outline-0 py-2 pl-4 text-black w-[435px]"
-						placeholder="Поиск..."
-					/>
-					<img
-						src="/search.png"
-						alt="Search icon"
-						class="absolute top-[20px] right-3"
-					/>
-				</div>
-				<img src="/start.png" />
-				<img src="/bag.png" />
-				<img src="/11.png" />
-				<img src="/person.png" />
-				<img src="/flag.png" />
 			</div>
 		</div>
-		
-	</header>
+	</div>
 </template>
 
 <script setup>
