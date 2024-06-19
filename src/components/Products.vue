@@ -20,14 +20,11 @@ fetchProducts() // Initial fetch
 		<div class="h-[80px]"></div>
 		<div>
 			<Loading v-if="loading" />
-			<!-- <div v-if="loading" class="text-center py-5">Loading ...</div> -->
 			<div v-else-if="error" class="text-center py-5 text-red-500">
 				Error loading products
 			</div>
-			<!-- <h2 class="text-center py-5 text-3xl font-semibold">Products</h2> -->
-
 			<div class="grid lg:grid-cols-5 gap-5 grid-cols-2">
-				<div
+				<!-- <div
 					class="bg-white p-5 rounded shadow-md hover:shadow-lg transition-shadow duration-400"
 					v-for="product in products"
 					:key="product.id"
@@ -42,7 +39,20 @@ fetchProducts() // Initial fetch
 					</h1>
 					<p class="line-clamp-2 mb-3">{{ product.description }}</p>
 					<h1 class="text-xl font-semibold">${{ product.price }}</h1>
-				</div>
+				</div> -->
+				<router-link
+					class="bg-white rounded p-5 shadow-md"
+					:to="{ name: 'product-detail', params: { id: item.id } }"
+					v-for="item in products"
+					:key="item.id"
+				>
+					<img :src="item.thumbnail" alt="" />
+					<h1 class="text-2xl font-medium line-clamp-1 my-3">
+						{{ item.title }}
+					</h1>
+					<p class="line-clamp-2 mb-3">{{ item.description }}</p>
+					<h1 class="text-2xl font-medium">{{ item.price }} $</h1>
+				</router-link>
 			</div>
 			<div class="flex items-center justify-center py-4">
 				<button
