@@ -9,9 +9,10 @@
 				<img src="/4.png" />
 				<img src="/5.png" />
 			</div>
-			<div class="box2 w-4/5 border flex gap-5">
-				<img src="/blotnoy.png" />
-				<div>
+			<div class="box2 w-4/5 flex gap-5">
+				<!-- <img src="/blotnoy.png" /> -->
+				<Productdetails class="" />
+				<div class="">
 					<div class="flex gap-3 mb-8">
 						<h2 class="text-[#023047] font-bold text-2xl">POLO</h2>
 						<h2 class="text-[#023047] font-bold text-2xl">Рубашка</h2>
@@ -241,6 +242,7 @@
 
 <script setup>
 import { ref, watch } from 'vue'
+import Productdetails from './ProductDetails.vue'
 
 const quantity = ref(1)
 const price = 100000

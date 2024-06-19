@@ -1,4 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter,createWebHistory} from 'vue-router'
+
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
 	routes: [
@@ -18,14 +19,9 @@ const router = createRouter({
 			component: () => import('../views/TovarView.vue'),
 		},
 		{
-			path: '/products',
-			name: 'products',
-			component: () => import('@/components/Products.vue'),
-		},
-		{
 			path: '/home/:id',
 			name: 'product-detail',
-			component: () => import('@/components/product-details.vue'),
+			component: () => import('../views/TovarView.vue'),
 		},
 	],
 	scrollBehavior(to, from, savedPosition) {
@@ -37,12 +33,11 @@ const router = createRouter({
 	},
 })
 
-router.beforeEach((to, from) => {
+router.beforeEach((to,from) => {
 	const isLoggedin = JSON.parse(localStorage.getItem('user'))
 
 	if (!isLoggedin && to.name != 'login') {
 		return { name: 'login' }
 	}
 })
-
 export default router
