@@ -9,7 +9,6 @@ import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
 import skidkaTovar from '../components/skidkaTovar.vue'
 </script>
-
 <template>
 	<div>
 		<Navbar />
