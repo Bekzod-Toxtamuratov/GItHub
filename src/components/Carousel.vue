@@ -23,13 +23,14 @@ const modules = ref([Pagination, Autoplay])
 		:modules="modules"
 		class="mySwiper"
 	>
-		<swiper-slide><img class="w-[1350px]" src="/main.png" /></swiper-slide>
 		<swiper-slide
-			><img class="h-full w-[1350px]" src="/main.png" />
+			><img class="w-[1350px] h-[390px]" src="/main.png"
+		/></swiper-slide>
+		<swiper-slide
+			><img class="w-[1350px] h-[390px]" src="/main.png" />
 		</swiper-slide>
 		<swiper-slide
-			><img class="h-full w-[1350px]" src="/main.png" />
-			
+			><img class="w-[1350px] h-[390px]" src="/main.png" />
 		</swiper-slide>
 	</swiper>
 </template>
