@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full bg-[#F7931F]">
-		<header class="container fixed z-20">
+		<header class="container">
 			<div class="flex justify-between py-3">
 				<div class="flex items-center">
 					<img src="/location.png" alt="Location icon" class="mr-2" />
@@ -23,8 +23,8 @@
 			</div>
 		</header>
 	</div>
-	<div class="w-full bg-white shadow-lg">
-		<div class="container sticky z-10 top-0 rigth-0">
+	<div class="w-full bg-[white] shadow-lg sticky z-20 top-0 rigth-0">
+		<div class="container">
 			<div class="w-full">
 				<div class="py-3 flex justify-between items-center z-10">
 					<router-link to="home">
