@@ -11,13 +11,16 @@
 						type="text"
 					/>
 				</label>
-				<label for="">
+				<label for="" class="relative">
 					Password
 					<input
 						v-model="userData.password"
 						class="w-full py-3 px-5 border rounded outline-none focus:border-primary"
-						type="text"
+						:type="check ? 'password' : 'text'"
 					/>
+					<button type="button"  class="absolute right-3 bottom-2">
+						<i @click="check = !check" class="text-2xl bx bxs-low-vision"></i>
+					</button>
 				</label>
 				<button class="py-3 px-5 text-xl bg-primary rounded text-white">
 					Login
@@ -28,9 +31,12 @@
 </template>
 <script setup>
 import api from '@/api'
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
+
+const check = ref(false)
 const router = useRouter()
+
 const userData = reactive({
 	username: '',
 	password: '',

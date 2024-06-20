@@ -3,7 +3,7 @@ import { useProducts } from '@/composable/useProducts.js'
 import { ref } from 'vue'
 import Loading from './Loading.vue'
 
-const limit = ref(8)
+const limit = ref(15)
 const skip = ref(0)
 const { products, error, loading, fetchProducts } = useProducts(limit, skip)
 
