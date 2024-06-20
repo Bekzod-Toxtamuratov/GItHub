@@ -18,7 +18,7 @@
 						class="w-full py-3 px-5 border rounded outline-none focus:border-primary"
 						:type="check ? 'password' : 'text'"
 					/>
-					<button type="button"  class="absolute right-3 bottom-2">
+					<button type="button" class="absolute right-3 bottom-2">
 						<i @click="check = !check" class="text-2xl bx bxs-low-vision"></i>
 					</button>
 				</label>
@@ -33,10 +33,8 @@
 import api from '@/api'
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
-
 const check = ref(false)
 const router = useRouter()
-
 const userData = reactive({
 	username: '',
 	password: '',
