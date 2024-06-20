@@ -1,6 +1,6 @@
 <template>
 	<div class="w-full bg-[#F7931F]">
-		<header class="container">
+		<header class="container fixed z-20">
 			<div class="flex justify-between py-3">
 				<div class="flex items-center">
 					<img src="/location.png" alt="Location icon" class="mr-2" />
