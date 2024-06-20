@@ -36,11 +36,4 @@ const router = createRouter({
 		}
 	},
 })
-router.beforeEach((to, from) => {
-	const isLoggedin = JSON.parse(localStorage.getItem('user'))
-
-	if (!isLoggedin && to.name != 'login') {
-		return { name: 'login' }
-	}
-})
 export default router
