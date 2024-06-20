@@ -1,14 +1,14 @@
 <script setup>
-import Navbar from '../components/Navbar.vue'
+import Footer from '../components/Footer.vue'
 import Magazin from '../components/Magazin.vue'
-// import Footer from '../components/Footer.vue'
+import Navbar from '../components/Navbar.vue'
 </script>
 
 <template>
 	<div>
 		<Navbar />
 		<Magazin />
-        <!-- <Footer /> -->
+		<Footer />
 	</div>
 </template>
 
