@@ -14,7 +14,7 @@ const loadMore = () => {
   fetchProducts2();
 };
 
-fetchProducts2(); // Initial fetch
+fetchProducts2();
 </script>
 
 <template>
@@ -23,12 +23,9 @@ fetchProducts2(); // Initial fetch
     <div class="h-[80px]"></div>
   <div>
     <Loading v-if="loading" />
-    <!-- <div v-if="loading" class="text-center py-5">Loading ...</div> -->
     <div v-else-if="error" class="text-center py-5 text-red-500">
       Error loading products
     </div>
-    <!-- <h2 class="text-center py-5 text-3xl font-semibold">Products</h2> -->
-
     <div class="grid lg:grid-cols-5 gap-5 gris-cols-2">
       <div
         class="bg-white p-5 rounded shadow-md hover:shadow-lg transition-shadow duration-300"
