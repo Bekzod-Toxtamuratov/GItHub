@@ -206,10 +206,9 @@
 						<p>Я купил товар</p>
 					</div>
 				</div>
-				<input
-					class="mt-10 py-3 px-[60px] border-2 mb-20 w-[40%]"
-					value="Показать больше комментариев"
-				/>
+				<button class="mt-10 py-3 px-[60px] border-2 mb-20 w-[40%]">
+					Показать больше комментариев
+				</button>
 			</div>
 			<div class="w-[30%] bg-[#FCE3A4] h-[409px]">
 				<div class="px-4">
@@ -218,14 +217,14 @@
 					</h2>
 					<input
 						class="bg-[#FAF4F4] py-3 px-5 w-full mb-5 text-[#C4C4C4]"
-						value="Ваше имя"
+						placeholder="Ваше имя"
 					/>
 					<input
 						class="bg-[#FAF4F4] py-3 px-5 w-full text-[#C4C4C4] mb-4"
-						value="Ваш  e-mail"
+						placeholder="Ваш  e-mail"
 					/>
 					<textarea
-						class="bg-[#FAF4F4] py-10 px-5 mb-4 w-full text-[#C4C4C4] h-[110px]"
+						class="bg-[#FAF4F4] outline-none resize-none py-10 px-5 mb-4 w-full text-[#C4C4C4] h-[110px]"
 						placeholder="Ваш отзыв"
 					>
 					</textarea>
