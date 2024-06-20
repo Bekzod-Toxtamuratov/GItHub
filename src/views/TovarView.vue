@@ -8,9 +8,8 @@ import Rubashka from '../components/Rubashka.vue'
 	<div>
 		<Navbar />
 		<Rubashka />
-		<PopularProducts :title="Похожи"  />
+		<PopularProducts class="mb-20" />
 		<Footer />
 	</div>
 </template>
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

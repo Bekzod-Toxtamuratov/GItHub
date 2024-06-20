@@ -6,8 +6,9 @@
 				<label for="">
 					Username
 					<input
+						value="emilys"
 						v-model="userData.username"
-						class="w-full py-3 px-5 border rounded outline-none focus:border-primary"
+						class="text-black text-xl w-full py-3 px-5 border rounded outline-none focus:border-primary"
 						type="text"
 					/>
 				</label>
@@ -15,12 +16,10 @@
 					Password
 					<input
 						v-model="userData.password"
-						class="w-full py-3 px-5 border rounded outline-none focus:border-primary"
+						value="emilypass"
+						class="text-black text-xl w-full py-3 px-5 border rounded outline-none focus:border-primary"
 						:type="check ? 'password' : 'text'"
 					/>
-					<button type="button" class="absolute right-3 bottom-2">
-						<i @click="check = !check" class="text-2xl bx bxs-low-vision"></i>
-					</button>
 				</label>
 				<button class="py-3 px-5 text-xl bg-primary rounded text-white">
 					Login
@@ -34,6 +33,12 @@ import api from '@/api'
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 const check = ref(false)
+const check2 = ref(false)
+
+const myCheckLogin = () => {
+	check = !check
+}
+
 const router = useRouter()
 const userData = reactive({
 	username: '',

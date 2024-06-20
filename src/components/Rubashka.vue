@@ -69,10 +69,10 @@
 						<label for="age2">M - 38</label>
 						<input type="radio" id="age3" name="age" value="100" />
 						<label for="age3">XL - 42</label>
-						<input type="radio" id="age3" name="age" value="100" />
-						<label for="age3">S - 36</label>
-						<input type="radio" id="age3" name="age" value="100" />
-						<label for="age3">S - 36</label>
+						<input type="radio" id="age4" name="age" value="100" />
+						<label for="age4">S - 36</label>
+						<input type="radio" id="age5" name="age" value="100" />
+						<label for="age5">S - 36</label>
 					</form>
 					<div class="flex gap-20 w-full mt-5">
 						<div>

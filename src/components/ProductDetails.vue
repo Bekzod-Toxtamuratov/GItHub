@@ -1,8 +1,6 @@
 <template>
 	<div class="">
 		<div class="container">
-			<button @click="backPage">orqaga</button>
-
 			<Loading v-if="loading" />
 
 			<div v-if="product">
