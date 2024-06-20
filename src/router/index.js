@@ -32,6 +32,11 @@ const router = createRouter({
 			name: 'vse-magazins',
 			component: () => import('../views/VseMagazinView.vue'),
 		},
+		{
+			path: '/faq',
+			name: 'faq',
+			component: () => import('../views/FaqView.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {

@@ -34,7 +34,11 @@
 					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
 						Новости
 					</p>
-					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">FAQ</p>
+					<router-link to="faq">
+						<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
+							FAQ
+						</p>
+					</router-link>
 					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
 						Личный кабинет
 					</p>
