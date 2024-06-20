@@ -14,9 +14,12 @@
 					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
 						Главная страница
 					</p>
-					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
-						О нас
-					</p>
+					<router-link to="about">
+						<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
+							О нас
+						</p>
+					</router-link>
+
 					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
 						Категории товара
 					</p>

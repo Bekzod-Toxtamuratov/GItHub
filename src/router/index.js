@@ -1,4 +1,4 @@
-import {createRouter,createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,6 +23,11 @@ const router = createRouter({
 			name: 'product-detail',
 			component: () => import('../views/TovarView.vue'),
 		},
+		{
+			path: '/about',
+			name: 'about',
+			component: () => import('../views/Onas.View.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {
@@ -32,7 +37,7 @@ const router = createRouter({
 		}
 	},
 })
-router.beforeEach((to,from) => {
+router.beforeEach((to, from) => {
 	const isLoggedin = JSON.parse(localStorage.getItem('user'))
 
 	if (!isLoggedin && to.name != 'login') {
