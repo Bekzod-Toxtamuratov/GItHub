@@ -28,7 +28,7 @@ const router = createRouter({
 			component: () => import('../views/Onas.View.vue'),
 		},
 		{
-			path: '/vse-magazins',
+			path: '/all-magazins',
 			name: 'vse-magazins',
 			component: () => import('../views/VseMagazinView.vue'),
 		},
