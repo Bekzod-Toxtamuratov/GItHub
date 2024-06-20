@@ -60,17 +60,7 @@ export const useMagazin = () => {
 			images: ['/img/table9.png', '/img/tables9.png', '/img/t9.png'],
 		},
 	])
-
-	// Carousel Start
-
-	//   const images = [
-	//     "/intro_images/carousel.png",
-	//     "/intro_images/carousel.png",
-	//     "/intro_images/carousel.png",
-	//   ];
-
 	const currentIndex = ref(0)
-
 	const prevSlide = () => {
 		currentIndex.value =
 			(currentIndex.value - 1 + images.length) % images.length
@@ -79,9 +69,6 @@ export const useMagazin = () => {
 	const nextSlide = () => {
 		currentIndex.value = (currentIndex.value + 1) % images.length
 	}
-
-	// Carousel Start
-
 	return {
 		intro,
 		currentIndex,
