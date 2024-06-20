@@ -1,5 +1,4 @@
 import { ref } from 'vue'
-
 export const useMagazin = () => {
 	const intro = ref([
 		{
