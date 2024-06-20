@@ -122,7 +122,9 @@
 		</div>
 
 		<div class="flex justify-center mt-[66px]">
-			<base-button>Все магазины</base-button>
+			<router-link to="vse-magazins">
+				<base-button>Все магазины</base-button>
+			</router-link>
 		</div>
 	</div>
 </template>

@@ -27,6 +27,11 @@ const router = createRouter({
 			name: 'about',
 			component: () => import('../views/Onas.View.vue'),
 		},
+		{
+			path: '/vse-magazins',
+			name: 'vse-magazins',
+			component: () => import('../views/VseMagazinView.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {
