@@ -32,7 +32,6 @@ const router = createRouter({
 		}
 	},
 })
-
 router.beforeEach((to,from) => {
 	const isLoggedin = JSON.parse(localStorage.getItem('user'))
 
