@@ -1,6 +1,5 @@
 import api from "../api";
 import { ref } from "vue";
-
 export function UseNewsProduct() {
   const news = ref(null);
   const error = ref(null);
@@ -17,6 +16,5 @@ export function UseNewsProduct() {
         error.value = err;
       });
   };
-
   return { news, error, fechData };
 }

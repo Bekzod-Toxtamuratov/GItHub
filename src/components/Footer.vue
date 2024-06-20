@@ -39,9 +39,11 @@
 							FAQ
 						</p>
 					</router-link>
-					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
-						Личный кабинет
-					</p>
+					<router-link to="personal"
+						><p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
+							Личный кабинет
+						</p>
+					</router-link>
 				</div>
 				<div>
 					<h2 class="text-[22px] font-bold leading-6 text-[#FFFFFF] mb-[46px]">

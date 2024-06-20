@@ -37,6 +37,11 @@ const router = createRouter({
 			name: 'faq',
 			component: () => import('../views/FaqView.vue'),
 		},
+		{
+			path: '/personal',
+			name: 'personal',
+			component: () => import('../views/PersonalView.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {
