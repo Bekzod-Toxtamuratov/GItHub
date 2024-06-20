@@ -27,7 +27,9 @@
 		<div class="container sticky z-10 top-0 rigth-0">
 			<div class="w-full">
 				<div class="py-3 flex justify-between items-center z-10">
-					<img src="/Logo.png" alt="Logo" />
+					<router-link to="home">
+						<img src="/Logo.png" alt="Logo" />
+					</router-link>
 
 					<div class="flex gap-x-6 items-center">
 						<div class="flex gap-2 border items-center border-[#F7931E] px-4">

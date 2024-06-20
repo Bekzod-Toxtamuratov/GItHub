@@ -11,9 +11,12 @@
 					<h2 class="text-[22px] font-bold leading-6 text-[#FFFFFF] mb-[22px]">
 						Карта сайта
 					</h2>
-					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
-						Главная страница
-					</p>
+					<router-link to="home">
+						<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
+							Главная страница
+						</p>
+					</router-link>
+
 					<router-link to="about">
 						<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
 							О нас

@@ -7,10 +7,8 @@ import Market from '../components/Market.vue'
 import Navbar from '../components/Navbar.vue'
 import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
-import Novosti from '../components/Novosti.vue'
 import skidkaTovar from '../components/skidkaTovar.vue'
 import ToTop from '../components/ToTop.vue'
-
 </script>
 <template>
 	<div>
@@ -21,13 +19,9 @@ import ToTop from '../components/ToTop.vue'
 		<Banner />
 		<Products />
 		<Dostavka />
-
-		<Novosti />
-
 		<skidkaTovar />
 		<Footer />
 		<ToTop />
-
 	</div>
 </template>
 <style lang="scss" scoped></style>
