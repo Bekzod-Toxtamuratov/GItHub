@@ -5,7 +5,7 @@ export const useMagazin = () => {
 			logo: 'logo/table1.svg',
 			rating: 5,
 			title: 'Товары из категории Акции и скидки Товары из категории....',
-			images: ['/img/tables1.png', '/img/table1.png', '/img/t1.png'],
+			images: ['/img/table1.png', '/img/tables1.png', '/img/t1.png'],
 		},
 		{
 			logo: 'logo/table2.svg',

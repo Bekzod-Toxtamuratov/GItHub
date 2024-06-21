@@ -76,7 +76,7 @@
 
 <script setup>
 import Path from '../components/Vsemagazin.vue'
-import { useMagazin } from '../composable/useMagazin'
+import { useMagazin } from '../composable/useMagazin.js'
 
 const { intro } = useMagazin()
 </script>
