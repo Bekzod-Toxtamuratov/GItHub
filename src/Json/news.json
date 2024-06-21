@@ -1,0 +1,52 @@
+{
+  "newsItems": [
+    {
+      "title": "News Title 1",
+      "image": "https://example.com/news-image-1.jpg",
+      "description": "Description for news item 1",
+      "buttonText": "Подробнее",
+      "link": "https://example.com/news-1",
+      "date": "24.04.2021"
+    },
+    {
+      "title": "News Title 2",
+      "image": "https://example.com/news-image-2.jpg",
+      "description": "Description for news item 2",
+      "buttonText": "Подробнее",
+      "link": "https://example.com/news-2",
+      "date": "24.04.2021"
+    },
+    {
+      "title": "News Title 3",
+      "image": "https://example.com/news-image-3.jpg",
+      "description": "Description for news item 3",
+      "buttonText": "Подробнее",
+      "link": "https://example.com/news-3",
+      "date": "24.04.2021"
+    }
+  ],
+  "videoNewsItems": [
+    {
+      "title": "Video News Title 1",
+      "image": "https://example.com/video-news-image-1.jpg",
+      "description": "Description for video news item 1",
+      "buttonText": "Подробнее",
+      "link": "https://example.com/video-news-1"
+    },
+    {
+      "title": "Video News Title 2",
+      "image": "https://example.com/video-news-image-2.jpg",
+      "description": "Description for video news item 2",
+      "buttonText": "Подробнее",
+      "link": "https://example.com/video-news-2",
+      "date": "30.04.2021"
+    },
+    {
+      "title": "Video News Title 3",
+      "image": "https://example.com/video-news-image-3.jpg",
+      "description": "Description for video news item 3",
+      "buttonText": "Подробнее",
+      "link": "https://example.com/video-news-3"
+    }
+  ]
+}
