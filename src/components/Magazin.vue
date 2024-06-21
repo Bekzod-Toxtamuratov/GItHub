@@ -2,6 +2,7 @@
   <div class="container mt-20 md:mb-[120px]">
     <p class="text-k_asosiy font-medium text-4xl sm:text-3xl md:text-5xl leading-tight mb-10">
       Новости
+      
     </p>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
       <div
