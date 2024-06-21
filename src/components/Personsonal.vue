@@ -107,7 +107,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex justify-center mb-[150px]">
+		<div class="flex justify-center pb-[150px]">
 			<button class="py-2 px-10 text-white bg-primary rounded-md">
 				Cохранить
 			</button>
