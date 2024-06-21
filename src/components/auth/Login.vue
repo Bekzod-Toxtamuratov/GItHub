@@ -44,7 +44,7 @@ const myCheckLogin = () => {
 const router = useRouter()
 const userData = reactive({
 	username: 'emilys',
-	password: 'emilypass',
+	password: 'emilyspass',
 })
 const loginUser = () => {
 	api
