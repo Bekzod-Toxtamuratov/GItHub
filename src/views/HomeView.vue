@@ -22,6 +22,7 @@ import ToTop from '../components/ToTop.vue'
 		<Dostavka />
 		<skidkaTovar />
 		<Novosti />
+		<!-- novosti qoshilgan -->
 		<Footer />
 		<ToTop />
 	</div>
