@@ -79,7 +79,6 @@
 						</div>
 					</div>
 				</div>
-
 				<div>
 					<div class="mb-[60px]">
 						<p class="text-[16px] font-medium border-primary leading-5 mb-1">
