@@ -6,7 +6,6 @@
 				<label for="">
 					Username
 					<input
-						value="emilys"
 						v-model="userData.username"
 						class="text-black text-xl w-full py-3 px-5 border rounded outline-none focus:border-primary"
 						type="text"
@@ -16,10 +15,13 @@
 					Password
 					<input
 						v-model="userData.password"
-						value="emilypass"
 						class="text-black text-xl w-full py-3 px-5 border rounded outline-none focus:border-primary"
 						:type="check ? 'password' : 'text'"
 					/>
+					<button @click="check = !check" class="absolute top-1/2 right-5">
+						<img class="w-6 h-6" v-if="check" src="/eye.svg" alt="" />
+						<img class="w-6 h-6" v-else src="/eye_close.svg" alt="" />
+					</button>
 				</label>
 				<button class="py-3 px-5 text-xl bg-primary rounded text-white">
 					Login
@@ -41,8 +43,8 @@ const myCheckLogin = () => {
 
 const router = useRouter()
 const userData = reactive({
-	username: '',
-	password: '',
+	username: 'emilys',
+	password: 'emilypass',
 })
 const loginUser = () => {
 	api

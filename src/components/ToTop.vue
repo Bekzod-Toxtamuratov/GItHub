@@ -1,13 +1,13 @@
 <template>
 	<button
-		class="flex items-center justify-center w-20 h-20 rounded-full bg-primary fixed bottom-6 right-10 z-20"
+		class="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-primary fixed bottom-6 right-10 z-20"
 		@click="topFunction"
 		id="myBtn"
 		title="Go to top"
 		v-show="showButton"
 	>
 		<!-- <img class="bg-white w-[40px] " src="/down.svg" /> -->
-		<i class="text-[70px] text-white bx bx-chevron-down rotate-180"></i>
+		<i class="text-[60px] text-white bx bx-chevron-down rotate-180"></i>
 	</button>
 </template>
 

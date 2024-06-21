@@ -12,7 +12,7 @@ function openAccordion() {
 			class="header flex justify-between items-center py-4 px-4 rounded-md"
 			@click="openAccordion"
 		>
-			<img :class="isOpen ? 'translate-y-2' : ''" src="/acc.png" />
+			<img :class="isOpen ? 'rotate-90' : ''" src="/acc.png" />
 			<span
 				:class="isOpen ? 'text-primary' : ''"
 				class="text-[20px] font-bold text-black"
