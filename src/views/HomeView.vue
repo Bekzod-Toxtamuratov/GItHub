@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar.vue'
 import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
 import skidkaTovar from '../components/skidkaTovar.vue'
+
 import ToTop from '../components/ToTop.vue'
 </script>
 <template>
