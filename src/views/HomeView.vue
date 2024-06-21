@@ -7,6 +7,7 @@ import Market from '../components/Market.vue'
 import Navbar from '../components/Navbar.vue'
 import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
+import Novosti from '../components/Novosti.vue'
 import skidkaTovar from '../components/skidkaTovar.vue'
 
 import ToTop from '../components/ToTop.vue'
@@ -21,6 +22,8 @@ import ToTop from '../components/ToTop.vue'
 		<Products />
 		<Dostavka />
 		<skidkaTovar />
+		<Novosti />
+		<!-- novosti qoshilgan -->
 		<Footer />
 		<ToTop />
 	</div>
