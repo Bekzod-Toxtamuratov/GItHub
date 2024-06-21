@@ -1,84 +1,100 @@
 <template>
-	<Path />
-	<div>
-		<div class="container mt-[10px] mb-[80px]">
-			<div class="md:flex justify-between items-center">
-				<h1
-					class="font-medium text-3xl sm:text-5xl text-[#F7931E] sm:py-7 py-5"
-				>
-					Все магазины
-				</h1>
-				<button
-					class="flex justify-between gap-2 text-[#F7931E] border-[#F7931E] border px-4 py-2 text-center items-center"
-				>
-					Сортировка по
-
-					<svg
-						width="10"
-						height="6"
-						viewBox="0 0 10 6"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M1 1L5 5L9 1"
-							stroke="#F7931E"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-					</svg>
-				</button>
-			</div>
-
-			<!-- Intro Start >>>>>>>> -->
-			<div class="mx-auto">
-				<div
-					class="md:flex md:flex-wrap md:justify-evenly md:flex-row md:items-normal flex-col sm:items-center gap-2"
-				>
-					<div
-						class="w-full flex flex-col shadow-md gap-2 lg:w-[389px] lg:h-[333px] md:w-[300px] md:h-[220px] sm:w-full sm:h-full bg-k_gray lg:p-4 md:p-2 p-2 md:my-4 max-md:my-4 pb-4 justify-between"
-						v-for="(item, i) in intro"
-						:key="i"
-					>
-						<div class="flex justify-between">
-							<img class="" :src="item.logo" alt="i" />
-							<p class="flex items-center gap-1">
-								<img src="/logo/star.svg" alt="" /> {{ item.rating }}
-							</p>
-						</div>
-						<p class="lg:text-sm md:text-xs font-normal text-black">
-							{{ item.title }}
-						</p>
-
-						<div class="grid grid-cols-2 md:gap-2.5 sm:gap-0 mr-[4%] gap-2">
-							<div class="">
-								<img
-									class="md:h-full sm:h-[95%] h-full"
-									:src="item.images[0]"
-									alt="img"
-								/>
-							</div>
-							<div class="flex flex-col md:gap-2 sm:gap-0 gap-2">
-								<div class="w-full">
-									<img :src="item.images[1]" alt="img" />
-								</div>
-								<div class="w-full">
-									<img :src="item.images[2]" alt="img" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container mt-20 md:mb-[120px]">
+    <p class="text-k_asosiy font-medium text-4xl sm:text-3xl md:text-5xl leading-tight mb-10">
+      Новости
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div
+        v-for="item in products"
+        :key="item.id"
+        class="mb-8 bg-k_oq shadow-xl pb-5 relative space-x-5 transform transition-all duration-300 ease-in-out hover:translate-x-2 hover:translate-y-2 hover:bg-k_green cursor-pointer p-5"
+      >
+        <img :src="item.thumbnail" alt="" class="w-full h-48 object-cover" />
+        <p class="font-medium text-lg mx-4 mt-2 absolute bottom-24">
+          {{ item.title }}
+        </p>
+        <p class="font-normal text-sm opacity-70 mx-4 mt-2 mb-16">
+          {{ item.description }}
+        </p>
+        <div class="flex justify-between items-center mx-4">
+          <button
+            @click="more()"
+            class="text-sm bg-k_asosiy text-k_white font-normal h-10 px-4 rounded-md mt-5"
+          >
+            Подробно
+          </button>
+          <p class="font-bold text-xl mt-2 text-k_moviy">
+            24.04.2021
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex justify-center mb-10">
+    
+      <button @click="allproducts" class="bg-k_asosiy px-[50px] py-[16px] text-k_oq rounded-[5px] font-medium text-[18px] leading-[18px]"> Все магазины</button>
+    </div>
+  </div>
 </template>
 
 <script setup>
-import Path from '../components/Vsemagazin.vue'
-import { useMagazin } from '../composable/useMagazin'
+import { ref, onMounted } from "vue";
+import api from "../api";
 
-const { intro } = useMagazin()
+const products = ref([]);
+const error = ref(null);
+const loading = ref(true);
+const limit = ref(3);
+const skip = ref(0);
+const bezlimit = ref();
+
+const fetchProducts = () => {
+  api
+    .get(`/products?limit=${limit.value}&skip=${skip.value}`)
+    .then((res) => {
+      products.value = [...products.value, ...res.data.products];
+      skip.value += limit.value;
+    })
+    .catch((err) => {
+      error.value = err;
+    })
+    .finally(() => {
+      loading.value = false;
+    });
+};
+
+const allproducts = () => {
+  api
+    .get(`/products?bezlimit=${bezlimit.value}&skip=${skip.value}`)
+    .then((res) => {
+      products.value = [...products.value, ...res.data.products];
+      skip.value += bezlimit.value;
+    })
+    .catch((err) => {
+      error.value = err;
+    })
+    .finally(() => {
+      loading.value = false;
+    });
+};
+
+const more = () => {
+  api
+    .get(`/products/description?limit=${limit.value}&skip=${skip.value}`)
+    .then((res) => {
+      products.value = [...products.value, ...description];
+      skip.value += limit.value;
+    })
+    .catch((err) => {
+      error.value = err;
+    })
+    .finally(() => {
+      loading.value = false;
+    });
+};
+
+onMounted(() => {
+  fetchProducts();
+});
 </script>
 
 <style lang="scss" scoped></style>
