@@ -1,12 +1,13 @@
 <template>
 	<button
-		class="  flex items-center justify-center w-20 h-20 rounded-full bg-white  fixed bottom-6 right-10 z-20"
+		class="flex items-center justify-center w-20 h-20 rounded-full bg-primary fixed bottom-6 right-10 z-20"
 		@click="topFunction"
 		id="myBtn"
 		title="Go to top"
 		v-show="showButton"
 	>
-		<img class="bg-white w-[40px] " src="/down.svg" />
+		<!-- <img class="bg-white w-[40px] " src="/down.svg" /> -->
+		<i class="text-[70px] text-white bx bx-chevron-down rotate-180"></i>
 	</button>
 </template>
 
@@ -14,10 +15,13 @@
 import { ref } from 'vue'
 
 const showButton = ref(false)
+// const rotate = ref(false)
 
 function topFunction() {
+	// rotate.value = !rotate.value
 	document.body.scrollTop = 0
 	document.documentElement.scrollTop = 0
+	// rotate.value = false
 }
 
 window.addEventListener('scroll', () => {
