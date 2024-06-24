@@ -18,12 +18,12 @@
 						class="text-black text-xl w-full py-3 px-5 border rounded outline-none focus:border-primary"
 						:type="check ? 'password' : 'text'"
 					/>
-					<button @click="check = !check" class="absolute top-1/2 right-5">
+					<button type="button" @click="myfunction"  class="absolute top-1/2 right-5 ">
 						<img class="w-6 h-6" v-if="check" src="/eye.svg" alt="" />
 						<img class="w-6 h-6" v-else src="/eye_close.svg" alt="" />
 					</button>
 				</label>
-				<button class="py-3 px-5 text-xl bg-primary rounded text-white">
+				<button  @click="loginUser"  class="py-3 px-5 text-xl bg-primary rounded text-white">
 					Login
 				</button>
 			</form>
@@ -35,24 +35,22 @@ import api from '@/api'
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
 const check = ref(false)
-const check2 = ref(false)
-
-const myCheckLogin = () => {
-	check = !check
-}
-
 const router = useRouter()
 const userData = reactive({
 	username: 'emilys',
 	password: 'emilyspass',
 })
+const myfunction=()=>{
+	  check.value=!check.value
+	 console.log("checkMyda")
+}
 const loginUser = () => {
 	api
 		.post('/auth/login', userData)
 		.then(res => {
 			localStorage.setItem('user', JSON.stringify(res.data))
 			router.push('/home')
-			console.log('res', res)
+			// console.log('res', res)
 		})
 		.catch(err => {
 			console.log('err', err)
