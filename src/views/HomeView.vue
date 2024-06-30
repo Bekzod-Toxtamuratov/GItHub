@@ -9,7 +9,7 @@ import Novosti from '../components/Novosti.vue'
 import PopularProducts from '../components/PopularProducts.vue'
 import Products from '../components/Products.vue'
 import skidkaTovar from '../components/skidkaTovar.vue'
-
+import Brendi from '../components/Brendi.vue'
 import ToTop from '../components/ToTop.vue'
 </script>
 <template>
@@ -22,8 +22,8 @@ import ToTop from '../components/ToTop.vue'
 		<Products />
 		<Dostavka />
 		<skidkaTovar />
+		<Brendi />
 		<Novosti />
-		<!-- novosti qoshilgan -->
 		<Footer />
 		<ToTop />
 	</div>

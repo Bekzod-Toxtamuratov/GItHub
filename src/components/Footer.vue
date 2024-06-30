@@ -25,9 +25,11 @@
 						</p>
 					</router-link>
 
-					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
-						Категории товара
-					</p>
+					<router-link to="/dorage">
+						<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
+							Категории товара
+						</p>
+					</router-link>
 					<p class="text-base font-normal leading-5 text-[#FFFFFF] mb-5">
 						Акции
 					</p>
@@ -82,16 +84,15 @@
 						</p>
 					</div>
 					<router-link to="/contact">
-					<div class="flex gap-4 items-center">
-
+						<div class="flex gap-4 items-center">
 							<img class="cursor-pointer w-[18px] h-[18px]" src="/call.png" />
 							<p
-							class="cursor-pointer font-normal text-[18px leading-5] text-[white]"
+								class="cursor-pointer font-normal text-[18px leading-5] text-[white]"
 							>
-							+998 (90) 123 45 67
-						</p>
-					</div>
-				</router-link>
+								+998 (90) 123 45 67
+							</p>
+						</div>
+					</router-link>
 				</div>
 			</div>
 			<hr class="mb-4" />
