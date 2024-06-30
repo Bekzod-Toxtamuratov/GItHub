@@ -54,7 +54,7 @@
 						<p class="text-[16px] font-medium leading-5 mb-1">Город</p>
 						<div class="mb-10 border border-primary w-[80%]">
 							<select
-								class="py-3 border-primary top-0 outline-none w-full"
+								class="py-3 px-5 border-primary top-0 outline-none w-full"
 								name="cars"
 								id="cars"
 							>
@@ -67,7 +67,7 @@
 						<p class="text-[16px] font-medium leading-5 mb-1">Добавить адрес</p>
 						<div class="border border-primary w-[80%]">
 							<select
-								class="py-3 border-primary top-0 text-primary outline-none w-full"
+								class="py-3 px-5 border-primary top-0 text-primary outline-none w-full"
 								name="cars"
 								id="cars"
 							>
@@ -92,8 +92,8 @@
 						/>
 					</div>
 					<div class="border border-primary w-[80%]">
-						<select
-							class="py-3 border-primary top-0 outline-none w-full"
+						<select 
+							class="py-3 px-5 border-primary top-0 outline-none w-full"
 							name="cars"
 							id="cars"
 						>

@@ -11,6 +11,7 @@ import Products from '../components/Products.vue'
 import skidkaTovar from '../components/skidkaTovar.vue'
 import Brendi from '../components/Brendi.vue'
 import ToTop from '../components/ToTop.vue'
+import New_detail from '../components/New_detail.vue'
 </script>
 <template>
 	<div>
@@ -24,6 +25,7 @@ import ToTop from '../components/ToTop.vue'
 		<skidkaTovar />
 		<Brendi />
 		<Novosti />
+		<New_detail />
 		<Footer />
 		<ToTop />
 	</div>
