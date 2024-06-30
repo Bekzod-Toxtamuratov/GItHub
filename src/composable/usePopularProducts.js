@@ -1,13 +1,11 @@
 import { ref } from "vue";
 import api from "@/api";
-
 export function usePopularProducts() {
   const products = ref([]);
   const error = ref(null);
   const loading = ref(false);
   const limit = ref(4);
   const skip = ref(0);
-
   const fetchPopularProducts = () => {
     loading.value = true;
 

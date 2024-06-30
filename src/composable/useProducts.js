@@ -1,6 +1,5 @@
 import api from '@/api'
 import { ref } from 'vue'
-
 export function useProducts() {
 	const products = ref([])
 	const error = ref(null)
@@ -10,7 +9,6 @@ export function useProducts() {
 	const skip = ref(0)
 	const fetchProducts = () => {
 		loading.value = true
-
 		api
 			.get(`/products?limit=${limit.value}&skip=${skip.value}`)
 			.then(res => {
@@ -25,10 +23,8 @@ export function useProducts() {
 				loading.value = false
 			})
 	}
-
 	const fetchProducts2 = () => {
 		loading.value = true
-
 		api
 			.get(`/products?limit=${limit2.value}&skip=${skip.value}`)
 			.then(res => {
@@ -43,6 +39,5 @@ export function useProducts() {
 				loading.value = false
 			})
 	}
-
 	return { products, error, loading, fetchProducts, fetchProducts2 }
 }
