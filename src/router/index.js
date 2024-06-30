@@ -47,6 +47,11 @@ const router = createRouter({
 			name: 'novosti',
 			component: () => import('../views/Novosti.vue'),
 		},
+		{
+			path: '/katalog',
+			name: 'katalog',
+			component: () => import('../views/Katalog.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		if (savedPosition) {
